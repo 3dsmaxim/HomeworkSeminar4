@@ -29,7 +29,7 @@ int numToPow(int[] number)
     return pow;
 }
 Console.WriteLine("Введите 2 целых числа");
-int[] num = { Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()) };
+int[] num = { Convert.ToInt32(Console.ReadLine()), Math.Abs(Convert.ToInt32(Console.ReadLine())) };
 
 Console.WriteLine($"{num[0]} в степени {num[1]}  равен {numToPow(num)}");
 
